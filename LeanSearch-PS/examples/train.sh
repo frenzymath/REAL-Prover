@@ -1,0 +1,25 @@
+deepspeed --include localhost:0,1,2,3 --master_port 60000 --module tevatron.retriever.driver.train \
+  --deepspeed ./deepspeed/ds_zero3_config.json \
+  --output_dir ./checkpoints/output_dir \
+  --model_name_or_path ./models/E5-Mistral-7B-Instruct \
+  --lora \
+  --lora_target_modules q_proj,k_proj,v_proj,o_proj,down_proj,up_proj,gate_proj \
+  --save_steps 100 \
+  --dataset_name ./datasets/dataset_name \
+  --query_prefix 'Given a lean4 context with two states, retrieve Lean4 theorems useful to transfer the state from "state before" and "state after": ' \
+  --passage_prefix "Lean4 theorem: " \
+  --bf16 \
+  --pooling eos \
+  --append_eos_token \
+  --normalize \
+  --temperature 0.01 \
+  --per_device_train_batch_size 8 \
+  --gradient_checkpointing \
+  --train_group_size 16 \
+  --learning_rate 2e-5 \
+  --query_max_len 128 \
+  --passage_max_len 256 \
+  --num_train_epochs 1 \
+  --logging_steps 10 \
+  --overwrite_output_dir \
+  --gradient_accumulation_steps 4
