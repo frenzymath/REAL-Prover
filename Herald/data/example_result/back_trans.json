@@ -1,0 +1,5 @@
+{
+  "informal_statement": "Prove that the following is a group, \n\n    Given group $(G,*)$. We define $(G^\\mathrm{op},\\circ)$ as follows: \n\n    \n\n    $\\bullet$ Elements are the set $G$. \n\n\n\n    $\\bullet$ Multiplication $\\circ$ given by $g\\circ h:=h*g$. \n\n\n\n    $\\bullet$ Identity and inverse same as in $G$.",
+  "translate_list": [],
+  "back_trans_list": []
+}

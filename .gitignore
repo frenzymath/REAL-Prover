@@ -1,0 +1,17 @@
+*.DS_Store
+__pycache__
+.vscode
+.idea
+generated/**
+experiment/logs/**
+outputs/**
+figs/**
+config.test.json
+kto_data/**
+**.tar.gz
+oooops/**
+md/*
+temp/*
+statistic/*
+print_tree.py
+alg-test-temp.jsonl
