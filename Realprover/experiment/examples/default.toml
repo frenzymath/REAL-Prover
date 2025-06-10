@@ -1,0 +1,33 @@
+info = "bf_minif2f_test_pass64"
+
+[model]
+prover_model_id = "realprover"
+prover_model_path = "/path/to/your/model"
+prover_model_params = { temperature = 1.5, max_tokens = 256, top_p = 0.9, logprobs = 1 }
+is_incontext = true
+template = 'qwen'
+use_retrieval = true
+
+[data]
+data_id = "minif2f_test"
+data_path = "data/minif2f_test.jsonl"
+
+[search]
+num_samples = 64
+max_depth = 128
+max_calls = 1024
+max_retries = 64
+max_nodes = 1024
+abandon_if_contain = ["sorry", "admit", "apply?"]
+
+[beam_search_params]
+use_beam_search = false
+beam_width = 3
+
+[mcts_params]
+use_mcts_search = false
+sim_depth = 0
+c_puct = 10.0
+c_score = 1.0
+c_expansion_fail_penalty = 30.0
+max_root_expansion = 5
