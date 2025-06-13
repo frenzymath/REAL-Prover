@@ -154,7 +154,7 @@ class PipelineMainService(BaseService):
                     # check result right
                     if 'formal_proof' in temp_result:
                         try:
-                            repl_res = verify_proof(temp_result['formal_proof'],os.path.join(conf.config.LEAN_ENV_PATH,'bin/lake'),conf.config.LEAN_TEST_PATH)
+                            repl_res = verify_proof(temp_result['formal_proof'],os.path.join(conf.config.LEAN_ENV_PATH,'lake'),conf.config.LEAN_TEST_PATH)
                         except Exception as e:
                             print(traceback.format_exc())
                             repl_res = False

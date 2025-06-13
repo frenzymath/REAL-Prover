@@ -21,7 +21,7 @@ AIFORMATH_PATH = "/volume/ai4math"
 PROVER_MODEL_ID = 'realprover'
 PROVER_MODEL_PATH = '/path/to/your/model'
 LEAN_TEST_PATH = '/path/to/lean/environment' #Path to repo https://github.com/frenzymath/lean_test_v4160
-LEAN_ENV_PATH = "/path/to/lean/dir"
+LEAN_ENV_PATH = "/path/to/lean/dir" #path to bin e.g. ~/.elan/bin
 
 # NUM_SAMPLES = 64
 # MAX_DEPTH = 128

@@ -173,7 +173,7 @@ class BatchMainService(BaseService):
                     if 'formal_proof' in save_data:
                         try:
                             print(f"lake repl check:{item['id']}",flush=True)
-                            repl_res = verify_proof(save_data['formal_proof'],os.path.join(conf.config.LEAN_ENV_PATH,'bin/lake'),conf.config.LEAN_TEST_PATH)
+                            repl_res = verify_proof(save_data['formal_proof'],os.path.join(conf.config.LEAN_ENV_PATH,'lake'),conf.config.LEAN_TEST_PATH)
                         except Exception as e:
                             print(traceback.format_exc())
                             save_data['collect_results'][0]['success'] = False
