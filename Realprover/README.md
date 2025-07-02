@@ -4,8 +4,8 @@
 
 Across all our projects, we use `leanprover/lean:v4.16.0`. To run this project, you need to have `interactive` and `jixia` installed and built. You also need a Lean 4 project as a working environment (referred to as a `space`). You can obtain these 2 dependencies as follow:
 
-- jixia: [jixia](https://github.com/frenzymath/jixia.git). Clone this repo in the parental directory and run `lake build`.
-- interactive: [interactive](https://github.com/reaslab/interactive). Clone this repo in the parental directory and run `lake build`.
+- jixia: [jixia](https://github.com/frenzymath/jixia). Clone this repo in the parental directory and run `lake build`.
+- interactive: [interactive](https://github.com/frenzymath/interactive). Clone this repo in the parental directory and run `lake build`.
 - space: [lean_test_v4160](https://github.com/frenzymath/lean_test_v4160). Clone this repo in the parental directory and run `lake build`.
 
 The recommended directory organization is
@@ -49,6 +49,10 @@ python -m herald.run --source_file /path/to/herald/informal/data --result_dir /p
 #### Input Data Format
 Each input data should be a JSONL line with two keys: `id` and `formal_statement`.
 See `data/minif2f_test.jsonl` for examples.
+
+#### Start Leansearch-PS-inference server
+See the detailed documentation in [LeanSearch-PS-inference/README.md](../LeanSearch-PS-inference/README.md).
+
 
 #### Running
 
