@@ -1,6 +1,6 @@
 # HERALD-AF
 ## Configuration
-To get started, modify the configuration file at `conf/config.py`:
+To get started, modify the configuration file at [`conf/config.py`](conf/config.py):
 ```python
 LEAN_TEST_PATH = "/path/to/lean_test" # Path to the Lean repo: https://github.com/frenzymath/lean_test_v4160
 DEFAULT_LAKE_PATH = '/path/to/lake' # Path to Lean's lake directory
