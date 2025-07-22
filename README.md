@@ -35,10 +35,12 @@ lake build
 
 ### REAL-Prover
 See [Realprover/README.md](Realprover/README.md) for usage and implementation details.
+The trained model is available on Hugging Face: [REAL-Prover](https://huggingface.co/FrenzyMath/REAL-Prover) 
 
 ### FATE-M Dataset
 The FATE-M dataset is located at [`Realprover/data/fate_m.jsonl`](Realprover/data/fate_m.jsonl).
 
 
 ### Data
-Additional dataset documentation and structure coming soon.
+We collected around 50k state–tactic pairs, available in this dataset:
+[https://huggingface.co/datasets/FrenzyMath/state_tactic_pairs](https://huggingface.co/datasets/FrenzyMath/state_tactic_pairs)
